@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/calculator.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="cal-body">
+        <input type="text" class="text-box" readonly>
+        <div class="buttons">
+            <button class="button1" onclick="
+            currentDisplay = '';
+            document.querySelector('.text-box').value = currentDisplay;">C</button>
+            <button class="button1" onclick="
+            currentDisplay = currentDisplay +'1';
+            document.querySelector('.text-box').value = currentDisplay;
+            ">1</button>
+            <button class="button1" onclick="currentDisplay = currentDisplay +'2';
+            document.querySelector('.text-box').value = currentDisplay;">2</button>
+            <button class="button1" onclick="currentDisplay = currentDisplay +'+';
+            document.querySelector('.text-box').value = currentDisplay;">+</button>
+            <button class="button1" onclick="currentDisplay = currentDisplay +'3';
+            document.querySelector('.text-box').value = currentDisplay;">3</button>
+            <button class="button1" onclick="currentDisplay = currentDisplay +'4';
+            document.querySelector('.text-box').value = currentDisplay;">4</button>
+            <button class="button1" onclick="currentDisplay = currentDisplay +'-';
+            document.querySelector('.text-box').value = currentDisplay;">-</button>
+            <button class="button1" onclick="currentDisplay = currentDisplay +'5';
+            document.querySelector('.text-box').value = currentDisplay;">5</button>
+            <button class="button1" onclick="currentDisplay = currentDisplay +'6';
+            document.querySelector('.text-box').value = currentDisplay;">6</button>
+            <button class="button1" onclick="currentDisplay = currentDisplay +'*';
+            document.querySelector('.text-box').value = currentDisplay;">*</button>
+            <button class="button1" onclick="currentDisplay = currentDisplay +'7';
+            document.querySelector('.text-box').value = currentDisplay;">7</button>
+            <button class="button1" onclick="currentDisplay = currentDisplay +'8';
+            document.querySelector('.text-box').value = currentDisplay;">8</button>
+            <button class="button1" onclick="currentDisplay = currentDisplay +'/';
+            document.querySelector('.text-box').value = currentDisplay;">/</button>
+            <button class="button1" onclick="
+            let result = eval(currentDisplay);
+            currentDisplay = result;
+            document.querySelector('.text-box').value = currentDisplay;
+            ">=</button>
+            <button class="button1" onclick="currentDisplay = currentDisplay +'9';
+            document.querySelector('.text-box').value = currentDisplay;">9</button>
+            <button class="button1" onclick="currentDisplay = currentDisplay +'0';
+            document.querySelector('.text-box').value = currentDisplay;">0</button>
+            <button class="button1" onclick="currentDisplay = currentDisplay +'.';
+            document.querySelector('.text-box').value = currentDisplay;">.</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        let currentDisplay = '';
+    </script>
+</body>
+</html>
