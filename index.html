@@ -3,186 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amazon</title>
-    <link rel="Stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="Stylesheet" href="/Style.css">
+    <link rel="stylesheet" href="/calculator.css">
+    <title>Calculator</title>
 </head>
-<body> 
-    <header>
-        <div class="navbar">
-            <div class="nav-logo border">
-                <div class="logo"></div>
-            </div>
-            <div class="nav-add border">
-                <p class="addr-first">Deliver to</p>
-                <div class="add-icon">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <p class="addr-second">India</p>
-                </div>
-            </div>
-            <div class="nav-search">
-                <select class="search-select">
-                    <option>All</option>
-                </select>
-                <input placeholder="Search Amazon" class="search-input">
-                <div class="search-icon">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
-            </div>
-            <div class="nav-link border">
-                <p><span>Hello, sign in</span></p>
-                <p class="nav-second">Account & Lists</p>
-            </div>
-            <div class="nav-orders border">
-                <p><span>Returns</span></p>
-                <p class="nav-second">& Orders</p>
-            </div>
-            <div class="nav-cart border">
-                <i class="fa-solid fa-cart-shopping"></i>
-                Cart
-            </div>
-        </div>
-
-            <div class="panel">
-                <div class="panel-all border">
-                    <i class="fa-solid fa-bars"></i>
-                    All
-                </div>
-                <div class="panel-anchors">
-                    <p>Today's Deals</p>
-                    <p>Customer Service</p>
-                    <p>Registry</p>
-                    <p>Gift Cards</p>
-                    <p>Sell</p>
-                </div>
-                <div class="paneldeals">
-                    Shop deals in Electronics
-                </div>
-            </div>
-    </header>
-    <div class="hero-section">
-        <div class="hero-message">
-            <p>You are on amazon. You can also shop on Amazon India for million of products with fast local delivery. <a>Click here to go to amazon.in</a></p>
-
-        </div>
-    </div>
-    <div class="shop-section">
-        <div class="box1 box">
-            <div class="box-content">
-                <h2>Health & Personal Care</h2>
-                <div class="box-img" style="background-image: url('box2_image.jpg');"></div>
-                <p>See more</p>
-            </div>
-        </div>
-        <div class="box2 box">
-            <div class="box-content">
-                <h2>Clothes</h2>
-                <div class="box-img" style="background-image: url('box1_image.jpg');"></div>
-                <p>See more</p>
-            </div>
-        </div>
-        <div class="box3 box">
-            <div class="box-content">
-                <h2>Furniture</h2>
-                <div class="box-img" style="background-image: url('box3_image.jpg');"></div>
-                <p>See more</p>
-            </div>
-        </div>
-        <div class="box4 box">
-            <div class="box-content">
-                <h2>Mobile Phones and Accessories</h2>
-                <div class="box-img" style="background-image: url('box4_image.jpg');"></div>
-                <p>See more</p>
-            </div>
-        </div>
-        <div class="box5 box">
-            <div class="box-content">
-                <h2>Level up your beauty routine</h2>
-                <div class="box-img" style="background-image: url('box5_image.jpg');"></div>
-                <p>See more</p>
-            </div>
-        </div>
-        <div class="box6 box">
-            <div class="box-content">
-                <h2>Have more fun with family</h2>
-                <div class="box-img" style="background-image: url('box6_image.jpg');"></div>
-                <p>See more</p>
-            </div>
-        </div>
-        <div class="box7 box">
-            <div class="box-content">
-                <h2>New Arrivals of Toys</h2>
-                <div class="box-img" style="background-image: url('box7_image.jpg');"></div>
-                <p>See more</p>
-            </div>
-        </div>
-        <div class="box8 box">
-            <div class="box-content">
-                <h2>Discover fashion trends</h2>
-                <div class="box-img" style="background-image: url('box8_image.jpg');"></div>
-                <p>See more</p>
+<body>
+    <div class="cal-body">
+        <input type="text" class="text-box" readonly>
+        <div class="buttons">
+            <button class="button1" onclick="
+            currentDisplay = '';
+            document.querySelector('.text-box').value = currentDisplay;">C</button>
+            <button class="button1" onclick="
+            currentDisplay = currentDisplay +'1';
+            document.querySelector('.text-box').value = currentDisplay;
+            ">1</button>
+            <button class="button1" onclick="currentDisplay = currentDisplay +'2';
+            document.querySelector('.text-box').value = currentDisplay;">2</button>
+            <button class="button1" onclick="currentDisplay = currentDisplay +'+';
+            document.querySelector('.text-box').value = currentDisplay;">+</button>
+            <button class="button1" onclick="currentDisplay = currentDisplay +'3';
+            document.querySelector('.text-box').value = currentDisplay;">3</button>
+            <button class="button1" onclick="currentDisplay = currentDisplay +'4';
+            document.querySelector('.text-box').value = currentDisplay;">4</button>
+            <button class="button1" onclick="currentDisplay = currentDisplay +'-';
+            document.querySelector('.text-box').value = currentDisplay;">-</button>
+            <button class="button1" onclick="currentDisplay = currentDisplay +'5';
+            document.querySelector('.text-box').value = currentDisplay;">5</button>
+            <button class="button1" onclick="currentDisplay = currentDisplay +'6';
+            document.querySelector('.text-box').value = currentDisplay;">6</button>
+            <button class="button1" onclick="currentDisplay = currentDisplay +'*';
+            document.querySelector('.text-box').value = currentDisplay;">*</button>
+            <button class="button1" onclick="currentDisplay = currentDisplay +'7';
+            document.querySelector('.text-box').value = currentDisplay;">7</button>
+            <button class="button1" onclick="currentDisplay = currentDisplay +'8';
+            document.querySelector('.text-box').value = currentDisplay;">8</button>
+            <button class="button1" onclick="currentDisplay = currentDisplay +'/';
+            document.querySelector('.text-box').value = currentDisplay;">/</button>
+            <button class="button1" onclick="
+            let result = eval(currentDisplay);
+            currentDisplay = result;
+            document.querySelector('.text-box').value = currentDisplay;
+            ">=</button>
+            <button class="button1" onclick="currentDisplay = currentDisplay +'9';
+            document.querySelector('.text-box').value = currentDisplay;">9</button>
+            <button class="button1" onclick="currentDisplay = currentDisplay +'0';
+            document.querySelector('.text-box').value = currentDisplay;">0</button>
+            <button class="button1" onclick="currentDisplay = currentDisplay +'.';
+            document.querySelector('.text-box').value = currentDisplay;">.</button>
             </div>
         </div>
     </div>
-    <footer>
-        <div class="foot-panel">
-            Back to Top
-        </div>
-        <div class="foot-links">
-            <ul>
-                <p>Get to Know Us</p>
-                <li><a>Careers</a></li>
-                <li><a>Blog</a></li>
-                <li><a>About Amazon</a></li>
-                <li><a>Investor Relations</a></li>
-                <li><a>Amazon Devices</a></li>
-                <li><a>Amazon Science</a></li>
-            </ul>
-            <ul>
-                <p>Make Money with us</p>
-                <li><a>Sell products on Amazon</a></li>
-                <li><a>Sell on Amazon Business</a></li>
-                <li><a>Sell apps on Amazon</a></li>
-                <li><a>Become an Affiliate</a></li>
-                <li><a>Advertise Your Products</a></li>
-                <li><a>Self-Publish with us</a></li>
-                <li><a>Host an Amazon Hub</a></li>
-                <li><select><option>See More Make Money with Us</option></select></li>
-            </ul>
-
-            <ul>
-                <p>Amazon Payment Products</p>
-                <li><a>Careers</a></li>
-                <li><a>Blog</a></li>
-                <li><a>About Amazon</a></li>
-                <li><a>Investor Relations</a></li>
-                <li><a>Amazon Devices</a></li>
-                <li><a>Amazon Science</a></li>
-            </ul>
-            
-            <ul>
-                <p>Let us Help you</p>
-                <li><a>Careers</a></li>
-                <li><a>Blog</a></li>
-                <li><a>About Amazon</a></li>
-                <li><a>Investor Relations</a></li>
-                <li><a>Amazon Devices</a></li>
-                <li><a>Amazon Science</a></li>
-            </ul>
-        </div>
-        <div class="foot-panel-2">
-            <div class="logo"></div>
-        </div>
-        <div class="foot-copyright">
-            <div class="pages">
-                <a>Conditions of Use</a>
-                <a>Privacy Notice</a>
-                <a>Your Ads Privacy Choices</a>
-            </div>
-            <div class="copyright">
-                © 1996-2024, Amazon.com, Inc. or its affiliates
-            </div>
-        </div>
-    </footer>
+    <script>
+        let currentDisplay = '';
+    </script>
 </body>
 </html>
